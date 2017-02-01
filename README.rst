@@ -1,16 +1,12 @@
 Easy SNMP
 =========
 
-|Build Status| |Coverage Status| |License|
+|License|
 
-.. |Build Status| image:: https://travis-ci.org/fgimian/easysnmp.svg?branch=master
-   :target: https://travis-ci.org/fgimian/easysnmp
-.. |Coverage Status| image:: https://coveralls.io/repos/fgimian/easysnmp/badge.svg
-   :target: https://coveralls.io/r/fgimian/easysnmp
 .. |License| image:: https://img.shields.io/badge/license-BSD-blue.svg
-   :target: https://github.com/fgimian/easysnmp/blob/master/LICENSE
+   :target: https://github.com/xluthi/easysnmp/blob/master/LICENSE
 
-.. image:: https://raw.githubusercontent.com/fgimian/easysnmp/master/images/easysnmp-logo.png
+.. image:: https://raw.githubusercontent.com/xluthi/easysnmp/master/images/easysnmp-logo.png
     :alt: Easy SNMP Logo
 
 Artwork courtesy of `Open Clip Art
@@ -28,6 +24,10 @@ information about SNMP.
 This module provides a full featured SNMP client API supporting all
 dialects of the SNMP protocol.
 
+This repository is a fork of the original `easysnmp <https://github.com/fgimian/easysnmp>`_,
+brying to bring some improvements or custom code.  The main addition is the
+``walk_bulk`` method of the ``Session`` object.
+
 Why Another Library?
 --------------------
 
@@ -43,6 +43,8 @@ Why Another Library?
 - Many other libraries like
   `Snimpy <https://snimpy.readthedocs.org/en/latest/>`_ are sadly
   based on PySNMP and so they suffer the same performance penalty.
+- original `easysnmp <<https://github.com/fgimian/easysnmp>`_ library is not
+  really active anymore.
 
 Quick Start
 -----------
@@ -132,8 +134,8 @@ You may generate the documentation as follows:
 Acknowledgments
 ---------------
 
-I'd like to say thanks to the following folks who have made this project
-possible:
+Thanks to  **Fotis Gimian** for his original repository.  The thanks below comes
+from him:
 
 -  **Giovanni Marzot**: the original author
 -  **ScienceLogic, LLC**: sponsored the initial development of this
